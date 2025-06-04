@@ -1,0 +1,180 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f7f6;
+    color: #333;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 25px;
+}
+
+.toggle-button {
+    display: block;
+    width: fit-content;
+    margin: 0 auto 30px auto;
+    padding: 12px 25px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.toggle-button:hover {
+    background-color: #0056b3;
+}
+
+.section {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 25px;
+    margin-bottom: 20px;
+    background-color: #fdfdfd;
+}
+
+.section.hidden {
+    display: none;
+}
+
+.message {
+    text-align: center;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    color: #d8000c;
+    background-color: #ffbaba;
+    border: 1px solid #d8000c;
+    display: none; /* 預設隱藏，有訊息時才顯示 */
+}
+
+/* Registration Form */
+.registration-form .form-group {
+    margin-bottom: 20px;
+}
+
+.registration-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+}
+
+.registration-form input[type="text"],
+.registration-form select {
+    width: calc(100% - 22px); /* Adjust for padding and border */
+    padding: 12px;
+    border: 1px solid #ccd0d3;
+    border-radius: 6px;
+    font-size: 16px;
+    box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+}
+
+.registration-form .radio-group {
+    margin-top: 5px;
+}
+
+.registration-form .radio-group label {
+    display: inline-block;
+    margin-right: 25px;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.registration-form input[type="radio"] {
+    margin-right: 8px;
+    transform: scale(1.2); /* Make radio buttons a bit larger */
+}
+
+.registration-form button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 14px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.registration-form button[type="submit"]:disabled {
+    background-color: #90ee90;
+    cursor: not-allowed;
+}
+
+.registration-form button[type="submit"]:hover:not(:disabled) {
+    background-color: #218838;
+}
+
+/* Admin Dashboard Styles */
+.department-status-card {
+    margin-bottom: 25px;
+    padding: 15px;
+    border: 1px solid #dcdcdc;
+    border-radius: 6px;
+    background-color: #fefefe;
+}
+
+.department-status-card h3 {
+    margin-top: 0;
+    color: #0056b3;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+.division-status-card {
+    margin-left: 20px;
+    margin-top: 15px;
+    padding: 10px;
+    border: 1px dashed #e0e0e0;
+    border-radius: 4px;
+    background-color: #fcfcfc;
+}
+
+.division-status-card h4 {
+    margin-top: 0;
+    color: #444;
+}
+
+.employee-list {
+    list-style: none;
+    padding: 0;
+}
+
+.employee-list li {
+    padding: 10px 0;
+    border-bottom: 1px dotted #f0f0f0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+}
+
+.employee-list li:last-child {
+    border-bottom: none;
+}
+
+.registered {
+    color: #28a745;
+    font-weight: bold;
+}
+
+.not-registered {
+    color: #dc3545;
+}

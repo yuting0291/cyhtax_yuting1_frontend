@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>公司活動報名系統</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>系統股專用報名系統</h1>
+
+        <button id="toggleViewBtn" class="toggle-button">查看報名狀況 (主管入口)</button>
+
+        <div id="registrationSection" class="section">
+            <h2>員工報名</h2>
+            <p id="message" class="message"></p>
+            <form id="registrationForm" class="registration-form">
+                <div class="form-group">
+                    <label for="departmentSelect">科室:</label>
+                    <select id="departmentSelect" required>
+                        <option value="">請選擇科室</option>
+                        </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="divisionSelect">股別:</label>
+                    <select id="divisionSelect" required disabled>
+                        <option value="">請選擇股別</option>
+                        </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="employeeName">姓名:</label>
+                    <input type="text" id="employeeName" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="employeeId">員工編號:</label>
+                    <input type="text" id="employeeId" required>
+                </div>
+
+                <div class="form-group">
+                    <label>便當:</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="lunchOption" value="葷" checked> 葷</label>
+                        <label><input type="radio" name="lunchOption" value="素"> 素</label>
+                    </div>
+                </div>
+
+                <button type="submit" id="submitBtn">送出報名</button>
+            </form>
+        </div>
+
+        <div id="adminDashboardSection" class="section hidden">
+            <h2>報名狀況總覽 (主管介面)</h2>
+            <div id="statusContent">正在載入報名狀況...</div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
